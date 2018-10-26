@@ -1,7 +1,13 @@
 ---
-title: "Holy cow!"
+title: "This is my personal website"
 ---
 
-### I have a webpage!
+### To know more about me?
 
-And I can put all kinds of stuff on it!
+please start with my [resume](about.html).
+
+### Here is my photo
+
+<img src="images/phote1.jpg" style="width:55%">
+
+### Here is [my facebook](https://www.facebook.com/hanbo.qiu.3)

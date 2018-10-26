@@ -1,9 +1,47 @@
 ---
-title: "About"
+title: "My academic and professional experience"
 ---
 
-### About this site
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+###My resume
+
+Hanbo Qiu
+
+EDUCATION
+Sep, 2018-May, 2020     Columbia University    New York, United States
+                         MS Biostatistics
+Sep, 2014-Jun, 2017	Fudan University       Shanghai, China
+PhD of Social Medicine and Health Management
+Feb, 2009-Feb, 2012	Fudan University       Shanghai, China
+Master of Public Health
+Sep, 2001-Jul, 2005	Fudan University       Shanghai, China
+Bachelor of Public Service Management
+Minored in Economics
+
+WORK EXPERIENCE
+Jul, 2005 To Aug,2018	Center for Disease Control & Prevention (CDC)            Shanghai, China
+	Data Analyst & Project Coordinator / Research Assistant
+	Involved in the follow-up program on diabetic patients in community; collecting data from diabetic patients; data cleansing & analysis; writing project report
+	Providing diabetes self-management training to diabetic patients
+	Human Resources Generalist
+Feb, 2005-Mar, 2005	Intern, Shanghai Bureau of Health                       Shanghai, China
+	Prepared for the conference on Health Census
+	Took part in the health census pilot as instructor, visiting several enterprises and seeking shortcomings in the investigating process
+Jul, 2004-Aug, 2004	Intern, Bank of Communication                         Shanghai, China
+	Assisted Director of the Finance Department in company credit extension; scanned and sorted basic information; worked on loan contracts; reported financial data 
+
+EXTRACURRICULAR ACTIVITIES
+Sep, 2001-Jun, 2003	Organizer of voluntary programs of public health
+	Designed posters to convey voluntary activities information on campus
+	Organized series voluntary activities to advocate agreement on cornea donation in community
+	Organized voluntary activities to inform residents of basic health knowledge and strategy of disease prevention
+
+PUBLICATION & TERM PAPERS
+2017
+	Term Paper: Pulmonary Tuberculosis Incidence and Risk Factors in Type 2 Diabetic Patients, and its Economic Evaluation of Screening Strategies in Shanghai 
+Publication: Incident rate and risk factors for tuberculosis among patients with type 2 diabetes: retrospective cohort study in Shanghai, China 
+2012	Term Paper: Distribution of Human Resources and Income Distribution Model in Shanghai Municipal and District Centers for Disease Control and Prevention
+
+HONOR
+2011	Excellent Regiment Staff
