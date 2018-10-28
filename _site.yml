@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "about"
+    - text: "CV"
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<hq2163@cumc.columbia.edu>
