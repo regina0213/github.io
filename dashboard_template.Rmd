@@ -7,9 +7,29 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
 library(flexdashboard)
 
+theme_set(theme_bw() + theme(plot.title = element_text(hjust = 0.5)))
+
 ```
+
+```{r}
+data("ny_noaa")
+
+airport = filter(ny_noaa, id %in% c("USW00094789", "USW00014732"),
+                 date >= as.Date("2010-01-01")) %>% 
+  separate(date, into = c("year", "month", "day"), sep = "-") %>%
+  mutate(name = recode(id, USW00094789 = "JFK_INTL_AP", 
+                        USW00014732 = "LAGUARDIA_AP"),
+         prcp = prcp / 10,
+         tmin = as.numeric(tmin) / 10,
+         tmax = as.numeric(tmax) / 10) %>%
+  select(name, id, everything())
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -17,7 +37,18 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+airport %>%
+  mutate(text_label = str_c("Precipitation: ", prcp, "mm", 
+                            "\nSnowfall: ", snow, "mm", 
+                            "\nSnow depth: ", snwd, "mm")) %>% 
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+          alpha = 0.5, 
+          color = ~name,
+          marker = list(size = 7),
+          text = ~text_label) %>% 
+  layout(xaxis = list(title = "Minimum daily temperature (℃)"), 
+         yaxis = list(title = "Maximum daily temperature (℃)")
+         )    
 ```
 
 Column {data-width=350}
@@ -26,12 +57,22 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+airport %>%
+  group_by(month) %>% 
+  summarise(sum_prcp = sum(prcp)) %>% 
+  plot_ly(x = ~month, y = ~sum_prcp, color = ~month, type = "bar") %>% 
+  layout(xaxis = list(title = "Month", showgrid = F), 
+         yaxis = list(title = "Culmulative precipitation \n(mm)")
+         )  
 ```
 
 ### Chart C
 
 ```{r}
-
+airport %>%
+  plot_ly(y = ~tmax, color = ~month, type = "box") %>% 
+  layout(xaxis = list(title = "Month", showgrid = F), 
+         yaxis = list(title = "Maxium temperature (℃)")
+         )
 ```
 
