@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Airports weather in NYC"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -13,28 +13,26 @@ library(plotly)
 library(flexdashboard)
 
 theme_set(theme_bw() + theme(plot.title = element_text(hjust = 0.5)))
-
 ```
 
-```{r}
+```{r clean data, include=FALSE}
 data("ny_noaa")
 
 airport = filter(ny_noaa, id %in% c("USW00094789", "USW00014732"),
                  date >= as.Date("2010-01-01")) %>% 
   separate(date, into = c("year", "month", "day"), sep = "-") %>%
-  mutate(name = recode(id, USW00094789 = "JFK_INTL_AP", 
-                        USW00014732 = "LAGUARDIA_AP"),
+  mutate(name = recode(id, USW00094789 = "JFK", 
+                        USW00014732 = "Laguardia"),
          prcp = prcp / 10,
          tmin = as.numeric(tmin) / 10,
          tmax = as.numeric(tmax) / 10) %>%
   select(name, id, everything())
 ```
 
-
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Temperature Plot
 
 ```{r}
 airport %>%
@@ -46,24 +44,26 @@ airport %>%
           color = ~name,
           marker = list(size = 7),
           text = ~text_label) %>% 
-  layout(xaxis = list(title = "Minimum daily temperature (℃)"), 
-         yaxis = list(title = "Maximum daily temperature (℃)")
-         )    
+  layout(xaxis = list(title = "Minimum daily temperature (C)"), 
+         yaxis = list(title = "Maximum daily temperature (C)")
+         )
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Monthly Cumulative Precipitation
 
 ```{r}
 airport %>%
-  group_by(month) %>% 
-  summarise(sum_prcp = sum(prcp)) %>% 
-  plot_ly(x = ~month, y = ~sum_prcp, color = ~month, type = "bar") %>% 
+  group_by(name, month) %>% 
+  summarise(sum_prcp = sum(prcp)) %>%
+  spread(key = name, value = sum_prcp) %>% 
+  plot_ly(x = ~month, y = ~JFK, type = "bar", name = "JFK") %>% 
+  add_trace(y = ~Laguardia, name = "Laguardia") %>% 
   layout(xaxis = list(title = "Month", showgrid = F), 
          yaxis = list(title = "Culmulative precipitation \n(mm)")
-         )  
+         )
 ```
 
 ### Chart C
@@ -72,7 +72,6 @@ airport %>%
 airport %>%
   plot_ly(y = ~tmax, color = ~month, type = "box") %>% 
   layout(xaxis = list(title = "Month", showgrid = F), 
-         yaxis = list(title = "Maxium temperature (℃)")
+         yaxis = list(title = "Maxium temperature (C)")
          )
 ```
-

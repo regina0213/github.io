@@ -1,50 +1,39 @@
 ---
-title: "My resume"
+title: "Hanbo Qiu"
 ---
 
-                             Hanbo Qiu
+>###WORK EXPERIENCE
 
+* Jul, 2005-Aug, 2018　　**Shanghai Municipal Center for Disease Control & Prevention, Shanghai**  
+　　　　　　　　　　　Data Analyst & Project Coordinator / Research Assistant
 
-####EDUCATION
-Sep, 2018-Present     Columbia University    New York, United States MS Biostatistics
+* Feb, 2005-Mar, 2005　&nbsp;&nbsp;&nbsp;**Shanghai Bureau of Health, Shanghai**  
+　　　　　　　　　　　Internship
 
-Sep, 2014-Jun, 2017	Fudan University       Shanghai, China
-PhD of Social Medicine and Health Management
+* Jul, 2004-Aug, 2004　　**Bank of Communication, Shanghai**  
+　　　　　　　　　　　Internship
 
-Feb, 2009-Feb, 2012	Fudan University       Shanghai, China
-Master of Public Health
+>###EDUCATION
 
-Sep, 2001-Jul, 2005	Fudan University       Shanghai, China
-Bachelor of Public Service Management
-Minored in Economics
+* Sep, 2018-Present &nbsp;&nbsp;　　**Columbia University, New York**  
+　　　　　　　　　　　MS in Biostatistics
 
+* Sep, 2014-Jun, 2017　　**Fudan University, Shanghai**   
+　　　　　　　　　　　PhD in Social Medicine and Health Management  
+　　　　　　　　　　　Thesis: Pulmonary Tuberculosis Incidence and Risk Factors in Type 2 Diabetic Patients,  
+　　　　　　　　　　　　　　&nbsp;&nbsp;and Its Economic Evaluation of Screening Strategies in Shanghai  
+　　　　　　　　　　　Advisors: Fei Yan and Jian Zhang
+　　　　　　　　　　　
 
-####WORK EXPERIENCE
+* Feb, 2009-Feb, 2012　　**Fudan University, Shanghai**  
+　　　　　　　　　　　MPH  
+　　　　　　　　　　　Thesis: Distribution of Human Resources and Income Distribution Model  
+　　　　　　　　　　　　　　&nbsp;&nbsp;in Centers for Disease Control and Prevention in Shanghai  
+　　　　　　　　　　　Advisor: Shengnian Zhang
 
-Jul, 2005 To Aug,2018	Center for Disease Control & Prevention (CDC) Shanghai, China:Data Analyst & Project Coordinator / Research Assistant:Involved in the follow-up program on diabetic patients in community; collecting data from diabetic patients; data cleansing & analysis; writing project report:Providing diabetes self-management training to diabetic patients;Human Resources Generalist
+* Sep, 2001-Jul, 2005　　&thinsp;**Fudan University, Shanghai**   
+　　　　　　　　　　　Bachelor in Public Service Management
 
-Feb, 2005-Mar, 2005	Intern, Shanghai Bureau of Health Shanghai, China
-Prepared for the conference on Health Census;took part in the health census pilot as instructor, visiting several enterprises and seeking shortcomings in the investigating process
+>###PUBLICATION
 
-Jul, 2004-Aug, 2004	Intern, Bank of Communication Shanghai, China
-Assisted Director of the Finance Department in company credit extension; scanned and sorted basic information; worked on loan contracts; reported financial data 
-
-
-####EXTRACURRICULAR ACTIVITIES
-
-Sep, 2001-Jun, 2003	
-Organizer of voluntary programs of public health: Designed posters to convey voluntary activities information on campus;Organized series voluntary activities to advocate agreement on cornea donation in community;Organized voluntary activities to inform residents of basic health knowledge and strategy of disease prevention
-
-
-####PUBLICATION & TERM PAPERS
-
-2017
-Term Paper: Pulmonary Tuberculosis Incidence and Risk Factors in Type 2 Diabetic Patients, and its Economic Evaluation of Screening Strategies in Shanghai 
-Publication: Incident rate and risk factors for tuberculosis among patients with type 2 diabetes: retrospective cohort study in Shanghai, China 
-
-2012	
-Term Paper: Distribution of Human Resources and Income Distribution Model in Shanghai Municipal and District Centers for Disease Control and Prevention
-
-####HONOR
-
-2011	Excellent Regiment Staff
+**H. Qiu**, Y Shi, Y Li, X Shen, R Li, Q Yang, Q Pan, F Yan (2017). Incident rate and risk factors for tuberculosis among patients with type 2 diabetes: retrospective cohort study in Shanghai, China. *Tropical Medicine & International Health*, 22(7):830-838.

@@ -13,4 +13,4 @@ navbar:
       href: dashboard_template.html
 output:
   html_document:
-    theme: journal
+    theme: united
