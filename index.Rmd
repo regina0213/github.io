@@ -4,10 +4,10 @@ title: "This is my personal website"
 
 ### To know more about me?
 
-please start with my [resume](about.html).
+Please start with my [resume](about.html).
 
 ### Here is my photo
 
-<img src="images/phote1.jpg" style="width:55%">
+<img src="images/photo.png" style="width:55%">
 
-### Here is [my facebook](https://www.facebook.com/hanbo.qiu.3)
+### Welcome to [my facebook](https://www.facebook.com/hanbo.qiu.3).

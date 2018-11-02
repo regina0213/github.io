@@ -1,9 +1,10 @@
 ---
-title: "Airports weather in NYC"
+title: "Weather of NYC Airports in 2010"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    theme: simplex
 ---
 
 ```{r setup, include=FALSE}
@@ -11,8 +12,6 @@ library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(flexdashboard)
-
-theme_set(theme_bw() + theme(plot.title = element_text(hjust = 0.5)))
 ```
 
 ```{r clean data, include=FALSE}
@@ -66,12 +65,12 @@ airport %>%
          )
 ```
 
-### Chart C
+### Maximum teperature distribution by month
 
 ```{r}
 airport %>%
   plot_ly(y = ~tmax, color = ~month, type = "box") %>% 
   layout(xaxis = list(title = "Month", showgrid = F), 
-         yaxis = list(title = "Maxium temperature (C)")
+         yaxis = list(title = "Maximum temperature (C)")
          )
 ```
